@@ -20,7 +20,7 @@ Recognising the ongoing need to share knowledge about reproducible research, I d
 
 ## Description
 
-The presentation focuses on introducing the what, where, when, and how of reproducible research. We'll explore the benefits of working reproducibly---both for others and for ourselves---examine the factors that limit or discourage reproducible practices, and discuss practical, incremental solutions for becoming more reproducible in our work.
+The presentation focuses on introducing the what, where, when, and how of reproducible research. We'll explore the benefits of working reproducibly—both for others and for ourselves—examine the factors that limit or discourage reproducible practices, and discuss practical, incremental solutions for becoming more reproducible in our work.
 A seminar on this subject gains value through interaction and engagement from the audience, so I've woven discussion questions throughout the presentation to encourage exchange and reflection.
 
 
