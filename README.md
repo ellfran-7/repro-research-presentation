@@ -1,23 +1,28 @@
 <table style="width: 100%; border: none;">
   <tr>
     <td style="width: 70%; vertical-align: middle;">
-      <h1>A step towards Reproducible Research: Literate Programming</h1>
+      <h1>Reproducible Research: Every little helps</h1>
     </td>
     <td style="width: 30%; text-align: right;">
-      <img src="images/liec-logo.png" alt="LIEC logo" width="120">
+      <img src="images/liec-lehna.png" alt="LEHNA logo" width="120">
     </td>
   </tr>
 </table>
 
 [![License](https://img.shields.io/badge/licence-CC_BY_4.0-blue)](https://github.com/ellfran-7/cluefish/blob/main/LICENSE)
 
-## Birthright of the workshop
+## Background of the presentation
 
-This workshop was designed for members of my lab, the Laboratoire des Environnements Continentaux (LIEC), spanning both the Metz and Nancy sites. Recognising a need to share knowledge about reproducible research, I decided to organize this session to contribute what I know on the topic (or what I think I know :alien:). While I don’t claim to be an expert, every little helps. My hope is that this workshop sparks enough interest to encourage others to explore and strive toward more reproducible, transparent, and accessible research practices. 
+This presentation was designed for a weekly seminar series at the [LEHNA](https://umr5023.univ-lyon1.fr/) laboratory. It originated from discussions with my friend and lab member [Jérémy Bacon](https://umr5023.univ-lyon1.fr/annuaire/details/1/535-bacon-jeremy). This seminar is a shorter, less hands-on version of the workshop I conducted in February of this year—you can explore the full materials and site [here](https://ellfran-7.github.io/repro-research-workshop/). 
+
+Recognising the ongoing need to share knowledge about reproducible research, I decided to organise this session to contribute what I know on the topic (or what I think I know :alien:). While I don't claim to be an expert, every little helps. My hope is that this seminar sparks enough interest to encourage others to explore and strive toward more reproducible, transparent, and accessible research practices.
+
 
 ## Description
 
-To do at the end...
+The presentation focuses on introducing the what, where, when, and how of reproducible research. We'll explore the benefits of working reproducibly---both for others and for ourselves---examine the factors that limit or discourage reproducible practices, and discuss practical, incremental solutions for becoming more reproducible in our work.
+A seminar on this subject gains value through interaction and engagement from the audience, so I've woven discussion questions throughout the presentation to encourage exchange and reflection.
+
 
 ## Inspiration
 
