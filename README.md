@@ -4,7 +4,7 @@
       <h1>Reproducible Research: Every little helps</h1>
     </td>
     <td style="width: 30%; text-align: right;">
-      <img src="images/liec-lehna.png" alt="LEHNA logo" width="120">
+      <img src="images/liec-lehna.jpg" alt="LEHNA logo" width="120">
     </td>
   </tr>
 </table>
