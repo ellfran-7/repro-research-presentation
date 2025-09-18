@@ -1,0 +1,338 @@
+---
+title: "Reproducible Research"
+subtitle: "Every little helps"
+author:
+  - name: "Ellis Franklin"
+date: "2025-09-22"
+date-format: long
+format:
+  revealjs:
+    theme: [default, slide-styles.scss]
+    code-block-height: 700px
+    code-copy: true
+    width: 1600
+    height: 900
+    footer: "Seminar Sep 2025 | [Home page](https://ellfran-7.github.io/repro-research-presentation)"
+    transition: slide
+    background-transition: fade
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: false
+    auto-animate-duration: 0.8
+execute:
+  cache: true
+echo: false
+slide-number: true
+code-line-numbers: false
+from: markdown+emoji
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(
+    out.width = "70%", # enough room to breath
+    fig.width = 6,     # reasonable size
+    fig.asp = 0.618,   # golden ratio
+    fig.align = "center" 
+)
+
+```
+
+# Table of Contents
+
+-   [A bit about me](#me)
+-   [Introduction to RR](#intro_to_rr)
+-   [Sources of irreproducibility](#sources-nr)
+-   [The small steps we can take]()
+
+# A bit about me {#me style="text-align: center;"}
+
+<!-- Add images or not around the title? -->
+
+## <br/><br/><br/><br/> How many have had trouble reproducing<br />your own or someone else's work? :thinking: {style="text-align: center;"}
+
+# Introduction to RR {#intro_to_rr}
+
+## What should be kept the same<br />when reproducing a study? :thinking: {style="text-align: center;"}
+
+<br/>
+
+![](images/wooclap-connect-1.png){.lightbox width="1000"}
+
+[The results](https://app.wooclap.com/events/EAONYN/questions/68ca77353e150834b6ff7157)
+
+## What does reproducibility mean actually? {auto-animate="true"}
+
+:::::: columns
+:::: {.column width="50%"}
+<br/> <br/>
+
+::: incremental
+-   Difficult question to answer...
+-   "Lack of reproducibility"<br /> :arrow_right: understood but broad expression
+-   No clear definition<br /> :arrow_right: varies between the disciplines
+:::
+::::
+
+::: {.column width="50%"}
+:::
+::::::
+
+## What does reproducibility mean actually? {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+<br/> <br/>
+
+-   Difficult question to answer...
+-   "Lack of reproducibility"<br /> :arrow_right: understood but broad expression
+-   No clear definition<br /> :arrow_right: varies between the disciplines
+:::
+
+::: {.column width="50%"}
+![Gundersen Odd Erik 2021 The fundamental principles of reproducibility Phil. Trans. R. Soc. A.37920200210 DOI: [10.1098/rsta.2020.0210](http://doi.org/10.1098/rsta.2020.0210).](images/gundersen-2021-survey-def-repro.jpg)
+:::
+:::::
+
+## What does reproducibility mean actually? {auto-animate="true"}
+
+<br/>
+
+::: fragment
+-   [**Direct reproducibility**]{.nice-green} (also called *experimental reproducibility*)
+:::
+
+::: fragment
+-   [**Analytical reproducibility**]{.nice-green} (also called *computational reproducibility*)
+:::
+
+<br/>
+
+::: fragment
+Other related terms to distinguish:
+:::
+
+::: fragment
+-   **Replicability**: *Different data* \| Same analysis methods
+-   **Robustness**: Same data \| *Different analysis methods*
+-   **Generalisability**: Different data \| *Different analysis methods*
+:::
+
+::: aside
+<ul style="list-style: none; font-size: 75%">
+
+<li>Schloss, 2018. DOI: [10.1128/mbio.00525-18](https://doi.org/10.1128/mbio.00525-18)</li>
+
+<li>The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. [10.5281/zenodo.3233986](http://doi.org/10.5281/zenodo.3233986)</li>
+
+</ul>
+:::
+
+## In other words... {auto-animate="true"}
+
+<br/> <br/>
+
+:::::: r-hstack
+::: {.fragment data-id="box1" auto-animate-delay="0" style="background: #A8DADC; width: 300px; height: 200px; margin: 10px; display: flex; justify-content: center; align-items: center;"}
+Data
+:::
+
+::: {.fragment data-id="box2" auto-animate-delay="0.1" style="background: #AECBFA; width: 300px; height: 200px; margin: 10px; display: flex; justify-content: center; align-items: center;"}
+Code
+:::
+
+::: {.fragment data-id="box3" auto-animate-delay="0.2" style="background: #D4A5E6; width: 300px; height: 200px; margin: 10px; display: flex; justify-content: center; align-items: center;"}
+Documentation
+:::
+::::::
+
+## In other words... {auto-animate="true"}
+
+<br/> <br/>
+
+:::::: r-stack
+::: {data-id="box1" style="background: #A8DADC; width: 700px; height: 400px; border-radius: 50px;"}
+:::
+
+::: {data-id="box2" style="background: #AECBFA; width: 600px; height: 300px; border-radius: 50px;"}
+:::
+
+::: {data-id="box3" style="background: #D4A5E6; width: 500px; height: 200px; border-radius: 50px; display: flex; justify-content: center; align-items: center;"}
+Reproducible Research
+:::
+::::::
+
+## Why are we talking about this now?
+
+<!-- We need to have confidence that our research is good quality and we are doing good science. -->
+
+:::::: columns
+::: {.column width="50%"}
+![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI: [10.1038/533452a](https://doi.org/10.1038/533452a).](images/nature-reproducibility-crisis.png){.lightbox width="700" fig-align="center"}
+:::
+
+<!-- ![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI:  [10.1038/533452a](https://doi.org/10.1038/533452a).](images/donut_chart_fixed.png){.lightbox fig-align="center" width="1200"} -->
+
+:::: {.column width="50%"}
+<br/>
+
+::: incremental
+-   70% of researchers can't reproduce others' findings
+
+-   60% can't reproduce **their own findings**
+
+-   Non-reproducible biomedical research costs \$28 billion/year ([Freedman et al. 2015](https://doi.org/10.1371/journal.pbio.1002165))
+:::
+::::
+::::::
+
+<!-- ## What interest behind doing reproducible research<br />can you think of? :thinking: {style="text-align: center;"} -->
+
+## How important is it? [Well, quite important]{.fragment}
+
+</br> </br>
+
+<!-- In addition to basic scientific rigour, working reproducibly is hugely valuable, because: -->
+
+::: incremental
+-   Anyone (with a similar level of skills) should be able to do reproduce your research and benefit from it
+-   Funders (e.g., ANR) and journals now require data and code accessibility, which aligns with the growing open-science movement
+-   ~~If I keep my data and code, I have a competitive advantage~~
+-   If I share my data and code, my work will gain more visibility (and citations :sunglasses:)
+:::
+
+## Advantages
+
+</br> </br>
+
+::: incremental
+-   It obliges you to verify your work (by sharing both docs, data and code)
+-   [**Your future self**]{.nice-green} will thank you (you'll be much more productive)
+-   Your collaborators too
+-   By ensuring reproducibility, you reinforce your credibility and reputation
+-   Reproducible research skills are more and more sought after
+-   Reproducibility fosters [**trust**]{.nice-green} in scientific progress and [**accelerates**]{.nice-green} it
+
+```{=html}
+<!-- 
+It speeds progress in science by allowing you (or others) to rapidly build on previous findings and analyses
+It allows easy comparison of new analytical approaches (methods, models, etc) to older ones
+It makes it easy to repeat the same analyses when new data are collected or added
+Most skills and software used in Reproducible Research are very useful beyond Reproducible Research alone!
+Reproducible research skills are highly sought after in careers like data science etc…
+-->
+```
+:::
+
+# Factors limiting reproducibility {#sources-nr}
+
+## <br/><br/><br/><br/> What factors do you think<br /> can limit reproducibility? :thinking: {style="text-align: center;"}
+
+## Factors limiting reproducibility {auto-animate="\"true"}
+
+::::: columns
+::: {.column width="50%"}
+<br/> <br/> <br/>
+
+-   Failures of reproducibility cannot be traced to a single cause
+-   Nearly every aspect of a study needs to be considered
+:::
+
+::: {.column width="50%"}
+![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI: [10.1038/533452a](https://doi.org/10.1038/533452a).](images/nature-factors-irrepro.png){.lightbox fig-align="center"}
+:::
+:::::
+
+<!-- Despite the abundance of literature on and guidelines for a good research process, and increasing guidance directly on reproducibility, the scientific process is rife with pitfalls. -->
+
+# Barriers to working reproducibly
+
+> "Why don't we do it despite knowing we should?"
+
+## Barriers to working reproducibly
+
+<br/> <br/>
+
+::: incremental
+-   **Complexity** --- *learning curves, tempted by the "easy option"*
+-   **Technological change** --- *Hard- and software used in analyses change over time*
+-   **Human error** --- *Simple mistakes can easily make a study irreproducible*
+-   **Intellectual property rights** --- *Fear of not getting credit*
+:::
+
+# How can we be a bit more reproducible?
+
+> Every little helps
+
+## Before data analysis {auto-animate="true"}
+
+### Data storage and organisation
+
+<br/>
+
+**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+
+## Before data analysis {auto-animate="true"}
+
+### Data storage and organisation
+
+<br/>
+
+**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+
+<br/>
+
+::: {.column width="50%"}
+**Solutions**:
+:::
+
+## Before data analysis {auto-animate="true"}
+
+### Data storage and organisation
+
+<br/>
+
+**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+
+<br/>
+
+::::: columns
+::: {.column width="50%"}
+**Solutions**:
+
+-   Save your data!
+-   'Tidy' data formats
+-   Metadata, metadat and metadata
+-   Version control
+:::
+
+::: {.column width="50%"}
+![Roche et al. (2014) - Troubleshooting Public Data Archiving: Suggestions to Increase Participation. PLoS Biol 12(1): e1001779. DOI: [10.1371/journal.pbio.1001779](https://doi.org/10.1371/journal.pbio.1001779).](images/data-repo-illu.png){.lightbox width="500"}
+:::
+:::::
+
+
+## Before data analysis {auto-animate="true"}
+
+### Data storage and organisation
+
+<br/>
+
+**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+
+<br/>
+
+::::: columns
+::: {.column width="50%"}
+**Solutions**:
+
+-   Save your data!
+-   'Tidy' data formats
+-   Metadata, metadat and metadata
+-   Version control
+:::
+
+::: {.column width="50%"}
+![Roche et al. (2014) - Troubleshooting Public Data Archiving: Suggestions to Increase Participation. PLoS Biol 12(1): e1001779. DOI: [10.1371/journal.pbio.1001779](https://doi.org/10.1371/journal.pbio.1001779).](images/data-repo-illu.png){.lightbox width="500"}
+:::
+:::::
