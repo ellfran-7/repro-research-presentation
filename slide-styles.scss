@@ -23,6 +23,7 @@ $orange: #f2a03d !default;
 $green: #5a9f68 !default;
 $mossgreen: #588157 !default;
 $purple: #73245e !default;
+$dark-pink: #9f5a6f !default
 $beige: #f8f5f0 !default;
 $blue: #00817c !default;
 $indigo:  #6610f2 !default;
@@ -110,10 +111,18 @@ h6 {
   color: $green;
 }
 
+.nice-green-obj {
+  border-color: lighten($mossgreen, 40%) !important;
+  background-color: lighten($mossgreen, 40%);
+}
+
 .nice-blue {
   color: #00817c;
 }
 
+.nice-pink {
+  color: $dark-pink;
+}
 
 // Button and text
 
