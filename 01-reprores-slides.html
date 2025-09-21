@@ -222,7 +222,12 @@ Ellis Franklin
 <section>
 <section id="me" class="title-slide slide level1 center" style="text-align: center;">
 <h1>A bit about me</h1>
-<!-- Add images or not around the title? -->
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/logos-text-me.png" class="quarto-figure quarto-figure-center" height="400"></p>
+</figure>
+</div>
 </section>
 <section id="how-many-here-have-had-trouble-reproducing-your-own-or-someone-elses-work" class="slide level2" style="text-align: center;">
 <h2><br><br><br><br> How many here have had trouble reproducing<br>your own or someone else’s work? <span class="emoji" data-emoji="thinking">🤔</span></h2>
@@ -278,12 +283,12 @@ Ellis Franklin
 <p><br></p>
 <div class="fragment">
 <ul>
-<li><span class="nice-green"><strong>Direct reproducibility</strong></span> (also called <em>experimental reproducibility</em>)</li>
+<li><span class="nice-green"><strong>Direct reproducibility</strong></span> (also called <em>experimental reproducibility</em>) <span class="emoji" data-emoji="test_tube">🧪</span></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li><span class="nice-green"><strong>Analytical reproducibility</strong></span> (also called <em>computational reproducibility</em>)</li>
+<li><span class="nice-green"><strong>Analytical reproducibility</strong></span> (also called <em>computational reproducibility</em>) <span class="emoji" data-emoji="computer">💻</span></li>
 </ul>
 </div>
 <p><br></p>
@@ -1430,7 +1435,7 @@ Reproducible research skills are highly sought after in careers like data scienc
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
+          var filterRegex = new RegExp("https:\/\/ellfran-7\.github\.io\/repro-research-presentation\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
