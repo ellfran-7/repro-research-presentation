@@ -369,34 +369,6 @@ Reproducible research skills are highly sought after in careers like data scienc
 
 ## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
 
-### Data storage and organisation {auto-animate="true"}
-
-<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
-
-::: {style="margin-top: 1em;"}
-[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
-:::
-
-::::::: {style="margin-top: 1em;"}
-::::: columns
-::: {.column width="50%"}
-[**Solutions**]{.nice-green}:
-
--   Save your data!
--   Version control
-:::
-
-::: {.column width="50%"}
-![Artwork by [@allison_horst](https://allisonhorst.com/allison-horst)](images/ahorst-basic-github-workflow.png){.lightbox width="500"}
-
-:::
-:::::
-::::::: 
-
-
-
-## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
-
 ### Data storage and organisation
 
 <hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
