@@ -5,7 +5,7 @@ author:
 date: "2025-09-22"
 date-format: long
 number-sections: true
-number-depth: 3
+number-depth: 2
 toc: true
 from: markdown+emoji
 format: html
@@ -14,33 +14,75 @@ bibliography: references.bib
 
 <br/>
 
+## Comprehensive workshop resource recommendation
 
+I highly recommend the **Reproducible Research in Computational Ecology** workshop by Casajus et al. (2024), which provides slides and hands-on exercises covering all concepts discussed in this presentation including research compendium, version control with `git`, literate programming with `Quarto`, and reproducible environments with `renv.`
 
-## Some resources for learning more about Quarto
+Here is the reference and the link: 
 
--   Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL: <http://doi.org/10.5281/zenodo.4262978> ([link to workshop](https://rdatatoolbox.github.io/chapters/ex-compendium.html))
-
--   "*Introduction to Quarto*" by Andrew Bray at posit::conf(2024) ([link](https://posit-conf-2024.github.io/quarto-intro/))
-
--   "*With Quarto Coming, is R Markdwon Going Away? No*" blog post by Yihui Xie ([link](https://yihui.org/en/2022/04/quarto-r-markdown/))
-
--   "*Introduction to Quarto*" by Eric Delmelle ([link](https://ericdelmelle.github.io/introToQuarto/#/title-slide))
+-   Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL: <http://doi.org/10.5281/zenodo.4262978> ([workshop materials](https://rdatatoolbox.github.io/))
 
 <br/>
+
 
 ## Some resources for understanding Reproducible Research
 
--   Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. (<http://doi.org/10.5281/zenodo.4262978>) ([link to workshop](https://rdatatoolbox.github.io/chapters/ex-compendium.html))
+-   Repro4Everyone. ***Introduction to Reproducibility***. A beginner-friendly overview of reproducibility concepts and practices. ([link](https://www.repro4everyone.org/resources/intro-reproducibility))
 
--   Repro4Everyone. (n.d.). *Introduction to Reproducibility*. Repro4Everyone. ([link](https://www.repro4everyone.org/resources/intro-reproducibility))
+-   The Turing Way Community. ***Guide for Reproducible Research***. Comprehensive handbook covering all aspects of reproducible research DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807) ([link to guide](https://book.the-turing-way.org/reproducible-research/reproducible-research.html))
 
--   "*Guide for Reproducible Research*" by The Turing Way Community. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807) ([link to the guide](https://book.the-turing-way.org/reproducible-research/reproducible-research.html))
-
--   "*A conside guide to reproducible research using secondary data*" by Katharina Blankart, Maryna Ivets, Eva Goetjes and Kai Miele ([link](https://katblankart.github.io/DataLiteracy/intro.html))
+-   Blankart K, Ivets M, Goetjes E & Miele K. ***A Concise Guide to Reproducible Research Using Secondary Data***. Practical guide focused on working with existing datasets.  ([link](https://katblankart.github.io/DataLiteracy/intro.html))
 
 <br/>
 
-## Literature on Reproducible Research
+## Some resources for essential tools and technologies
+
+
+### Version control with `git` and hosting platforms
+
+-   Bryan J. ***Happy Git and GitHub for the useR***. Step-by-step guide for R users to get started with `git` and `GitHub.`  ([link](https://happygitwithr.com/))
+
+### Reproducible environments with `renv` R package
+
+-   Ushey K, Wickham H & Posit. ***renv: Project Environments for R***. Official documentation for managing R package dependencies. ([link](https://rstudio.github.io/renv/articles/renv.html))
+
+-   Maigné E. ***Package renv: présentation et retour d'expérience*** (French). Practical experience and presentation on using renv. ([link](https://elisemaigne.pages-forge.inrae.fr/2021_package_renv/presentation.html#1))
+
+
+### Tidy data 
+
+-   Wickham H, Çetinkaya-Rundel M & Grolemund G. ***R for Data Science***. Essential resource for learning data manipulation and the tidy data principles. ([link](https://r4ds.hadley.nz/data-tidy.html))
+
+
+
+### Literate programming and `Quarto`
+
+-   Knuth D. ***Literate Programming*** (1984). The original paper introducing the concept of literate programming. ([link](https://academic.oup.com/comjnl/article/27/2/97/343244))
+
+-   Abrams H. ***Literate Programming - Introduction***. Modern introduction to literate programming concepts. ([link](https://howardism.org/Technical/LP/introduction.html))
+
+-   Bray A. ***Introduction to Quarto (posit::conf 2024)***. Comprehensive tutorial for getting started with Quarto. ([link](https://posit-conf-2024.github.io/quarto-intro/))
+
+-   Xie Y. ***With Quarto Coming, is R Markdown Going Away? No***. Blog post clarifying the relationship between R Markdown and Quarto. ([link](https://yihui.org/en/2022/04/quarto-r-markdown/))
+
+-   Delmelle E. ***Introduction to Quarto***. Slide-based introduction to Quarto features and capabilities. ([link](https://ericdelmelle.github.io/introToQuarto/#/title-slide))
+
+<br/>
+
+
+## Finding repositories for your data:
+
+-   ***Où déposer et publier ses données*** - recherche.data.gouv.fr. French government guide for data deposition and publication. ([link](https://recherche.data.gouv.fr/fr/guide/ou-deposer-et-publier-ses-donnees))
+
+-   ***re3data*** - Registry of Research Data Repositories. Global registry to help find appropriate data repositories for your field. ([link](https://www.re3data.org/))
+
+
+<br/>
+
+
+## Key literature on Reproducible Research
+
+The bibliography section below contains seminal papers and recent developments in reproducible research practices:
 
 -   @claerbout1992
 -   @loscalzo2012
