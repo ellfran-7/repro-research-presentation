@@ -26,16 +26,17 @@ A seminar on this subject gains value through interaction and engagement from th
 
 ## Inspiration
 
-The workshop's structure and certain content elements were inspired by: 
+The presentation's structure and certain content elements were inspired by: 
 
-* the [Introduction to Quarto](https://github.com/rdatatoolbox/course-quarto) presentation from the [**_Data Toolbox for Reproducible Research in Ecology_**](https://rdatatoolbox.github.io) organized by the 
+* the [Reproducible research](https://github.com/rdatatoolbox/course-opensci/) presentation from the [**_Data Toolbox for Reproducible Research in Ecology_**](https://rdatatoolbox.github.io) organized by the 
 [FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/) 
 and the 
 [GdR EcoStat](https://sites.google.com/site)
 
+* Alston JM, Rick JA. 2021 A beginner’s guide to conducting reproducible research. Bull. Ecol. Soc. Am. 102, 1–14. (doi:[10.1002/bes2.1801c](http://doi.org/10.1002/bes2.1801c))
+
 * the [Introduction to Reproducibility](https://www.repro4everyone.org/resources/intro-reproducibility) presentation created by [Repro4Everyone](https://www.repro4everyone.org/)
 
-* Nicole Rennie's [Introduction to Quarto](https://nrennie.rbind.io/training-intro-to-quarto/)
 
 ## Licence
 
