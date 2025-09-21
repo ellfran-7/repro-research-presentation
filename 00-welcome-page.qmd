@@ -7,7 +7,7 @@ from: markdown+emoji
 format: html
 ---
 
-![Three little beans painting the same fruit basket, but with diverging results](images/efranklin-repro-illu.png){height="200" style="text-align: center;"}
+![Three little beans painting the same fruit basket, but with diverging results](images/efranklin-repro-illu.png){height="200" style="text-align: center; height: 200"}
 
 
 Welcome! :mage: 
