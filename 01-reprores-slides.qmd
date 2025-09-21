@@ -1,14 +1,14 @@
 ---
 title: "Reproducible Research"
-title-slide-attributes:
-  data-background-image: images/efranklin-repro-illu.png
-  data-background-size: "30%"
-  data-background-opacity: "1"
-  data-background-position: "50% 80%"
+# title-slide-attributes:
+#   data-background-image: images/efranklin-repro-illu.png
+#   data-background-size: "30%"
+#   data-background-opacity: "1"
+#   data-background-position: "50% 90%"
 subtitle: "Every little helps"
-# author:
-#   - name: "Ellis Franklin"
-# date: "2025-09-22"
+author:
+  - name: "Ellis Franklin"
+date: "2025-09-22"
 date-format: long
 format:
   revealjs:
@@ -17,7 +17,7 @@ format:
     code-copy: true
     width: 1600
     height: 900
-    footer: "Seminar Sep 2025 | [Home page](https://ellfran-7.github.io/repro-research-presentation)"
+    footer: "Seminar Sep  2025 | [Home page](https://ellfran-7.github.io/repro-research-presentation)"
     transition: slide
     background-transition: fade
     auto-animate-easing: ease-in-out
