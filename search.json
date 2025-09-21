@@ -186,7 +186,7 @@
     "href": "01-reprores-slides.html#before-data-analysis-5",
     "title": "Reproducible Research",
     "section": "Before data analysis ",
-    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\n\n\n\n\n\nArtwork by @allison_horst"
+    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\n\n\n\n\n\nArtwork by Allison Horst"
   },
   {
     "objectID": "01-reprores-slides.html#before-data-analysis-6",
@@ -207,25 +207,18 @@
     "href": "01-reprores-slides.html#before-data-analysis-8",
     "title": "Reproducible Research",
     "section": "Before data analysis ",
-    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\n\n\n\n\n\nArtwork by Allison Horst"
+    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\n\n\n\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
   },
   {
     "objectID": "01-reprores-slides.html#before-data-analysis-9",
     "href": "01-reprores-slides.html#before-data-analysis-9",
     "title": "Reproducible Research",
     "section": "Before data analysis ",
-    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\n\n\n\n\n\nIllustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst"
+    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\nMetadata, metadata and metadata\n\n\n\n\n\nZ the cat 🐱"
   },
   {
     "objectID": "01-reprores-slides.html#before-data-analysis-10",
     "href": "01-reprores-slides.html#before-data-analysis-10",
-    "title": "Reproducible Research",
-    "section": "Before data analysis ",
-    "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\nMetadata, metadata and metadata\n\n\n\n\n\nZ the cat 🐱"
-  },
-  {
-    "objectID": "01-reprores-slides.html#before-data-analysis-11",
-    "href": "01-reprores-slides.html#before-data-analysis-11",
     "title": "Reproducible Research",
     "section": "Before data analysis ",
     "text": "Before data analysis \nData storage and organisation\n\n\nIssues: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source\n\n\n\n\nSolutions:\n\nSave your data!\nVersion control\nOrganise files, code and data\nMetadata, metadata and metadata\n\n\n\n\n\nZ the cat 🐱"
