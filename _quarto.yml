@@ -2,40 +2,27 @@ project:
   type: website
   render: 
     - "00-welcome-page.qmd"
-    - "01-pre-work.qmd"
-    - "02-reprores-slides.qmd"
-    - "03-quarto-page.qmd"
-    - "04-post-work.qmd"
-    - "05-further-reads.qmd"
-    - "!04-exercises-page.qmd"
-    - "!02-quarto-slides.qmd"
+    - "01-reprores-slides.qmd"
+    - "02-further-reads.qmd"
     - "!templates/"
 
 execute:
   freeze: auto # computational documents re-render only when source changes
 
 website: 
-  title: "Reproducible Research Workshop"
+  title: "Reproducible research"
   navbar: 
     left: 
       - text: Welcome
         href: 00-welcome-page.qmd
-      - text: Pre-work
-        href: 01-pre-work.qmd
-      - text: Content
-        menu: 
-          - text: Repro Research
-            href: 02-reprores-slides.qmd
-          - text: Quarto
-            href: 03-quarto-page.qmd
-      - text: Post-work
-        href: 04-post-work.qmd
+      - text: Slides
+        href: 01-reprores-slides.qmd
       - text: Resources
-        href: 05-further-reads.qmd
+        href: 02-further-reads.qmd
     tools:
       - icon: github
         text: Source Code
-        href: https://github.com/ellfran-7/repro-research-workshop
+        href: https://github.com/ellfran-7/repro-research-presentation
   page-footer: 
     left: "© Ellis Franklin, 2025."
     right: "Made with 💚 and Quarto"
