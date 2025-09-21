@@ -1,6 +1,5 @@
 ---
 title: "Welcome"
-subtitle: "LIEC - CS WORKSHOP"
 date: last-modified
 date-format: long
 number-sections: false
@@ -8,32 +7,40 @@ from: markdown+emoji
 format: html
 ---
 
-::: {.grid}
 
-::: {.g-col-10}
+Welcome! :mage: 
 
-Welcome and thank you for you interest in participating in the following **LIEC - CS WORKSHOP** on *February 6th 2025* entitled ***A step towards Reproducible Research: Literate Programming***.
-
-:::
-
-::: {.g-col-2}
-
-![](images/liec-logo.png){fig-alt="LIEC logo" fig-align="right"}
-
-:::
-
-:::
+This presentation, “**Reproducible Research: Every little helps**”, offers a brief overview of key ideas and insights I’ve gathered from the literature—along with a few lessons I’ve learned along the way that may aid some of you.
 
 
-## Brief Workshop Overview
+## Background of the presentation
 
-The workshop will be divided into two parts:
+This presentation was designed for a weekly seminar series at the [LEHNA](https://umr5023.univ-lyon1.fr/) laboratory. It originated from discussions with my friend and lab member [Jérémy Bacon](https://umr5023.univ-lyon1.fr/annuaire/details/1/535-bacon-jeremy). This seminar is a shorter, less hands-on version of the workshop I conducted in February of this year—you can explore the full materials and site [here](https://ellfran-7.github.io/repro-research-workshop/). 
 
-1.  Reproducible Research: An Open Discussion
-2.  Literate Programming with Quarto: A Small but Impactful Step
+Recognising the ongoing need to share knowledge about reproducible research, I decided to organise this session to contribute what I know on the topic (or what I think I know :alien:). While I don't claim to be an expert, every little helps. My hope is that this seminar sparks enough interest to encourage others to explore and strive toward more reproducible, transparent, and accessible research practices.
 
-**Part 1** will be discussion-based, focusing on the concept of reproducibility, its importance, and the factors contributing to non-reproducibility. There will be practical work also. No prior coding or bioinformatics knowledge is needed here.
 
-**Part 2** is hands-on and involves practical work using specific informatic tools. To participate fully, you’ll need to download or update these tools in advance. Don’t worry—they’re free and easy to set up! Let's go!
+## Description
 
-To ensure everything runs smoothly on the day of the workshop, we’ll need to set up a few things beforehand. Visit the [Pre-workshop instructions](01-pre-work.qmd) to set everything up for the day! 🧙
+The presentation focuses on introducing the what, where, when, and how of reproducible research. We'll explore the benefits of working reproducibly—both for others and for ourselves—examine the factors that limit or discourage reproducible practices, and discuss practical, incremental solutions for becoming more reproducible in our work.
+A seminar on this subject gains value through interaction and engagement from the audience, so I've woven discussion questions throughout the presentation to encourage exchange and reflection.
+
+
+## Inspiration
+
+The presentation's structure and certain content elements were inspired by: 
+
+* the [Reproducible research](https://github.com/rdatatoolbox/course-opensci/) presentation from the [**_Data Toolbox for Reproducible Research in Ecology_**](https://rdatatoolbox.github.io) organized by the 
+[FRB-CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/) 
+and the 
+[GdR EcoStat](https://sites.google.com/site)
+
+* Alston JM, Rick JA. 2021 A beginner’s guide to conducting reproducible research. Bull. Ecol. Soc. Am. 102, 1–14. (doi:[10.1002/bes2.1801c](http://doi.org/10.1002/bes2.1801c))
+
+* the [Introduction to Reproducibility](https://www.repro4everyone.org/resources/intro-reproducibility) presentation created by [Repro4Everyone](https://www.repro4everyone.org/)
+
+
+## Licence
+
+Except where otherwise noted, this work is licensed under a [Creative Commons Attribution 4.0 International
+License](https://github.com/ellfran-7/repro-research-workshop/LICENCE.txt).

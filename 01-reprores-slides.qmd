@@ -22,7 +22,7 @@ execute:
   cache: true
 echo: false
 slide-number: true
-code-line-numbers: false
+code-line-numbers: true
 from: markdown+emoji
 ---
 
@@ -42,14 +42,14 @@ knitr::opts_chunk$set(
 
 -   [A bit about me](#me)
 -   [Introduction to RR](#intro_to_rr)
--   [Sources of irreproducibility](#sources-nr)
--   [The small steps we can take]()
+-   [Factors limiting reproducibility](#sources-nr)
+-   [How can we be a bit more reproducible?](#steps-4-repro)
 
 # A bit about me {#me style="text-align: center;"}
 
 <!-- Add images or not around the title? -->
 
-## <br/><br/><br/><br/> How many have had trouble reproducing<br />your own or someone else's work? :thinking: {style="text-align: center;"}
+## <br/><br/><br/><br/> How many here have had trouble reproducing<br />your own or someone else's work? :thinking: {style="text-align: center;"}
 
 # Introduction to RR {#intro_to_rr}
 
@@ -90,7 +90,7 @@ knitr::opts_chunk$set(
 :::
 
 ::: {.column width="50%"}
-![Gundersen Odd Erik 2021 The fundamental principles of reproducibility Phil. Trans. R. Soc. A.37920200210 DOI: [10.1098/rsta.2020.0210](http://doi.org/10.1098/rsta.2020.0210).](images/gundersen-2021-survey-def-repro.jpg)
+![Gundersen Odd Erik 2021 The fundamental principles of reproducibility Phil. Trans. R. Soc. A.37920200210 DOI: [10.1098/rsta.2020.0210](http://doi.org/10.1098/rsta.2020.0210).](images/gundersen-2021-survey-def-repro.jpg){.lightbox}
 :::
 :::::
 
@@ -168,7 +168,7 @@ Reproducible Research
 
 :::::: columns
 ::: {.column width="50%"}
-![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI: [10.1038/533452a](https://doi.org/10.1038/533452a).](images/nature-reproducibility-crisis.png){.lightbox width="700" fig-align="center"}
+![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI: [10.1038/533452a](https://doi.org/10.1038/533452a).](images/nature-reproducibility-crisis.png){.lightbox width="700" style="max-width: 90vw; max-height: 90vh;" fig-align="center"}
 :::
 
 <!-- ![Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452–454 (2016). DOI:  [10.1038/533452a](https://doi.org/10.1038/533452a).](images/donut_chart_fixed.png){.lightbox fig-align="center" width="1200"} -->
@@ -181,7 +181,7 @@ Reproducible Research
 
 -   60% can't reproduce **their own findings**
 
--   Non-reproducible biomedical research costs \$28 billion/year ([Freedman et al. 2015](https://doi.org/10.1371/journal.pbio.1002165))
+-   Non-reproducible biomedical research costs \$28 billion/year<br />([Freedman et al. 2015](https://doi.org/10.1371/journal.pbio.1002165))
 :::
 ::::
 ::::::
@@ -210,10 +210,9 @@ Reproducible Research
 -   [**Your future self**]{.nice-green} will thank you (you'll be much more productive)
 -   Your collaborators too
 -   By ensuring reproducibility, you reinforce your credibility and reputation
--   Reproducible research skills are more and more sought after
+-   Employers increasingly value reproducible research skills
 -   Reproducibility fosters [**trust**]{.nice-green} in scientific progress and [**accelerates**]{.nice-green} it
 
-```{=html}
 <!-- 
 It speeds progress in science by allowing you (or others) to rapidly build on previous findings and analyses
 It allows easy comparison of new analytical approaches (methods, models, etc) to older ones
@@ -221,7 +220,6 @@ It makes it easy to repeat the same analyses when new data are collected or adde
 Most skills and software used in Reproducible Research are very useful beyond Reproducible Research alone!
 Reproducible research skills are highly sought after in careers like data science etc…
 -->
-```
 :::
 
 # Factors limiting reproducibility {#sources-nr}
@@ -235,7 +233,7 @@ Reproducible research skills are highly sought after in careers like data scienc
 <br/> <br/> <br/>
 
 -   Failures of reproducibility cannot be traced to a single cause
--   Nearly every aspect of a study needs to be considered
+-   Nearly every aspect of a study needs to be considered<br />– *from conception to publication*
 :::
 
 ::: {.column width="50%"}
@@ -243,96 +241,776 @@ Reproducible research skills are highly sought after in careers like data scienc
 :::
 :::::
 
-<!-- Despite the abundance of literature on and guidelines for a good research process, and increasing guidance directly on reproducibility, the scientific process is rife with pitfalls. -->
+## Factors limiting reproducibility {auto-animate="\"true"}
 
-# Barriers to working reproducibly
+<br/>
 
-> "Why don't we do it despite knowing we should?"
-
-## Barriers to working reproducibly
-
-<br/> <br/>
-
-::: incremental
--   **Complexity** --- *learning curves, tempted by the "easy option"*
--   **Technological change** --- *Hard- and software used in analyses change over time*
--   **Human error** --- *Simple mistakes can easily make a study irreproducible*
--   **Intellectual property rights** --- *Fear of not getting credit*
+:::::: {layout="[10,-1,10]" layout-valign="center"}
+::: fragment
+![Timothée Poisot (Sep 8 2015) ‘Step 2 — do the rest of the fucking analysis’ \[Medium\], Page 1, accessed 10 Jan 2025.](images/tpoisot-protocol-ambiguous-drawing.png){.lightbox width="85%"}
 :::
 
-# How can we be a bit more reproducible?
+::: fragment
+!["Ambiguous protocol"](images/protocol-ambiguous-post.png){.lightbox width="90%"}
+:::
+::::::
+
+<!-- Despite the abundance of literature on and guidelines for a good research process, and increasing guidance directly on reproducibility, the scientific process is rife with pitfalls. -->
+
+<!-- # Barriers to working reproducibly -->
+
+<!-- > "Why don't we do it despite knowing we should?" -->
+
+<!-- ## Barriers to working reproducibly -->
+
+<!-- <br/> <br/> -->
+
+<!-- ::: incremental -->
+<!-- -   **Complexity** --- *learning curves, tempted by the "easy option"* -->
+<!-- -   **Technological change** --- *Hard- and software used in analyses change over time* -->
+<!-- -   **Human error** --- *Simple mistakes can easily make a study irreproducible* -->
+<!-- -   **Intellectual property rights** --- *Fear of not getting credit* -->
+<!-- ::: -->
+
+# How can we be a bit more reproducible? {#steps-4-repro}
 
 > Every little helps
 
-## Before data analysis {auto-animate="true"}
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
 
 ### Data storage and organisation
 
-<br/>
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
 
-**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
-
-## Before data analysis {auto-animate="true"}
-
-### Data storage and organisation
-
-<br/>
-
-**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
-
-<br/>
-
-::: {.column width="50%"}
-**Solutions**:
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
 :::
 
-## Before data analysis {auto-animate="true"}
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
 
 ### Data storage and organisation
 
-<br/>
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
 
-**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
 
-<br/>
+:::: {style="margin-top: 1em;"}
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+:::
+::::
 
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
 ::::: columns
 ::: {.column width="50%"}
-**Solutions**:
+[**Solutions**]{.nice-green}:
 
 -   Save your data!
--   'Tidy' data formats
--   Metadata, metadat and metadata
--   Version control
 :::
 
 ::: {.column width="50%"}
 ![Roche et al. (2014) - Troubleshooting Public Data Archiving: Suggestions to Increase Participation. PLoS Biol 12(1): e1001779. DOI: [10.1371/journal.pbio.1001779](https://doi.org/10.1371/journal.pbio.1001779).](images/data-repo-illu.png){.lightbox width="500"}
 :::
 :::::
+:::::::
 
 
-## Before data analysis {auto-animate="true"}
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
 
-### Data storage and organisation
+### Data storage and organisation {auto-animate="true"}
 
-<br/>
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
 
-**Issue**: difficult to reproduce research when data are disorganized or missing, or when it is impossible to determine where or how data originated
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
 
-<br/>
-
+::::::: {style="margin-top: 1em;"}
 ::::: columns
 ::: {.column width="50%"}
-**Solutions**:
+[**Solutions**]{.nice-green}:
 
 -   Save your data!
--   'Tidy' data formats
--   Metadata, metadat and metadata
 -   Version control
 :::
 
 ::: {.column width="50%"}
-![Roche et al. (2014) - Troubleshooting Public Data Archiving: Suggestions to Increase Participation. PLoS Biol 12(1): e1001779. DOI: [10.1371/journal.pbio.1001779](https://doi.org/10.1371/journal.pbio.1001779).](images/data-repo-illu.png){.lightbox width="500"}
+![](images/logos-git-hubs.png){fig-align="center"}
+
+
 :::
 :::::
+::::::: 
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+:::
+
+::: {.column width="50%"}
+![Artwork by [@allison_horst](https://allisonhorst.com/allison-horst)](images/ahorst-basic-github-workflow.png){.lightbox width="500"}
+
+:::
+:::::
+::::::: 
+
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+:::
+
+::: {.column width="50%"}
+![Artwork by Allison Horst](images/ahorst-before-compendium.png){.lightbox width="800"}
+:::
+:::::
+:::::::
+
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+
+### Data storage and organisation
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+:::
+
+::: {.column width="50%"}
+![Artwork by Allison Horst](images/ahorst-after-compendium.png){.lightbox width="800"}
+:::
+:::::
+:::::::
+
+
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+
+### Data storage and organisation
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+:::
+
+::: {.column width="50%"}
+![Artwork by Allison Horst](images/rcompendium-example.png){.lightbox width="350"}
+:::
+:::::
+:::::::
+
+
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+:::
+
+::: {.column width="50%"}
+![Illustrations from the [Openscapes](https://www.openscapes.org/) blog [*Tidy Data for reproducibility, efficiency, and collaboration*](https://www.openscapes.org/blog/2020/10/12/tidy-data/) by Julia Lowndes and Allison Horst](images/jlowndes-ahorst-tidydata.jpg){.lightbox width="600"}
+:::
+:::::
+:::::::
+
+
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+-   Metadata, metadata and metadata
+:::
+
+::: {.column width="50%"}
+![Z the cat :cat:](images/zcat-nometadata.png){.lightbox width="750"}
+:::
+:::::
+:::::::
+
+<!-- *But who took this photo? When? Where? What camera settings were used?* -->
+
+
+## Before data analysis ![](images/thread-before-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 600px;"} {auto-animate="true"} 
+
+### Data storage and organisation {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Poor data management leads to lost files, corrupted datasets, and mystery data that no one can interpret or trace back to its source
+:::
+
+::::::: {style="margin-top: 1em;"}
+::::: columns
+::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Save your data!
+-   Version control
+-   Organise files, code and data
+-   Metadata, metadata and metadata
+:::
+
+::: {.column width="50%"}
+![Z the cat :cat:](images/zcat-metadata.png){.lightbox width="750"}
+:::
+:::::
+:::::::
+
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+
+
+
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+::::
+
+:::: {.column width="50%"}
+
+<br/>
+
+::: {style="font-size: 70%;" .r-stack}
+*e.g.* **`renv`** R package for project-specific R environments
+:::
+
+
+![Ushey K, Wickham H (2025). renv: Project Environments. R package version 1.1.5, <https://rstudio.github.io/renv/>.](images/logo-renv.png){.lightbox width="200"}
+
+::::
+::::::
+::::::::
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+::::
+
+:::: {.column width="50%"}
+
+```{r}
+#| echo: true
+#| output: false
+#| eval: false
+
+# penguin_analysis.R
+# Author: Your Name
+# Purpose: Summarise bill length across species in `palmerpenguins` dataset
+# Date: 2025-09-22
+
+# ---- Load packages ----
+library(dplyr)
+library(palmerpenguins)
+
+# ---- Summarise bill length by species ----
+bill_length_summary_df <- penguins |>
+  group_by(species) |>
+  summarise(mean_bill_length_mm = mean(bill_length_mm, na.rm = TRUE))
+```
+
+::::
+::::::
+::::::::
+
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+::::
+
+:::: {.column width="50%"}
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/ahorst-hell-quarto){.lightbox width="700"}
+
+::::
+::::::
+::::::::
+
+<br/>
+
+::: {style="font-size: 70%; text-align: center; color: #8e8c84;"}
+"The best way to communicate from one human being to another is through story"<br />*Donald Knuth*
+
+:::
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+-   Harmonise your code style
+::::
+
+:::: {.column width="50%"}
+![Artwork by [@allison_horst](https://allisonhorst.com/allison-horst)](images/ahorst-inthatcase.png){.lightbox width="700"}
+
+::::
+::::::
+::::::::
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+-   Harmonise your code style
+::::
+
+:::: {.column width="50%"}
+```{r}
+#| echo: true
+#| output: false
+#| eval: false
+#| code-line-numbers: "1-2"
+# Variable name is way too descriptive
+mean_of_penguins_bill_length_in_millimeters_for_all_islands <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# Variable name too cryptic
+x <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# A better option
+bill_length_mean_mm <- mean(penguins$bill_length_mm, na.rm = TRUE)
+```
+
+::::
+::::::
+::::::::
+
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+-   Harmonise your code style
+::::
+
+:::: {.column width="50%"}
+```{r}
+#| echo: true
+#| output: false
+#| eval: false
+#| code-line-numbers: "5-6"
+
+# Variable name is way too descriptive
+mean_of_penguins_bill_length_in_millimeters_for_all_islands <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# Variable name too cryptic
+x <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# A better option
+bill_length_mean_mm <- mean(penguins$bill_length_mm, na.rm = TRUE)
+```
+
+::::
+::::::
+::::::::
+
+
+## During data analysis ![](images/thread-during-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 595px;"} {auto-animate="true"}
+
+### Best coding practices {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}: Without proper coding practices, analyses become error-prone, impossible to reproduce, and difficult for others (including your future self) to understand or verify
+:::
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Use reproducible environments
+-   Document your code
+-   Harmonise your code style
+::::
+
+:::: {.column width="50%"}
+```{r}
+#| echo: true
+#| output: false
+#| eval: false
+#| code-line-numbers: "8-9"
+
+# Variable name is way too descriptive
+mean_of_penguins_bill_length_in_millimeters_for_all_islands <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# Variable name too cryptic
+x <- mean(penguins$bill_length_mm, na.rm = TRUE)
+
+# A better option
+bill_length_mean_mm <- mean(penguins$bill_length_mm, na.rm = TRUE)
+```
+
+::::
+::::::
+::::::::
+
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}:
+Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
+:::
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}:
+Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
+:::
+
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Produce figures + tables with code<br />(not by :wave:)
+::::
+
+:::: {.column width="50%"}
+
+
+![](images/this-is-fine-meme.jpg){.lightbox width="700" fig-align="center"}
+
+
+::::
+::::::
+::::::::
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}:
+Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
+:::
+
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Produce figures + tables with code<br />(not by :wave:)
+-   Share openly (preprints, open access)
+::::
+
+:::: {.column width="50%"}
+
+![](images/logos-preprints-pubs.png){fig-align="center"}
+
+::::
+::::::
+::::::::
+
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}:
+Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
+:::
+
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Produce figures + tables with code<br />(not by :wave:)
+-   Share openly (preprints, open access)
+::::
+
+:::: {.column width="50%"}
+
+![](images/logos-preprints-pubs.png){fig-align="center"}
+
+::::
+::::::
+::::::::
+
+
+## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
+
+### Finalising results and sharing {auto-animate="true"}
+
+<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
+
+::: {style="margin-top: 1em;"}
+[**Issues**]{.nice-pink}:
+Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
+:::
+
+
+:::::::: {style="margin-top: 1em;"}
+:::::: columns
+:::: {.column width="50%"}
+[**Solutions**]{.nice-green}:
+
+-   Produce figures + tables with code<br />(not by :wave:)
+-   Share openly (preprints, open access)
+::::
+
+:::: {.column width="50%"}
+
+![](images/logos-data-code-repos.png){fig-align="center" width="550"}
+
+::::
+::::::
+::::::::
+
+
+## Take-home messages
+
+::: {style="font-size: 70%;"}
+> Reproducible research is a process, not a destination
+:::
+
+::: incremental
+- Start small: pick one practice and build habits
+- Perfect is the enemy of good
+- The goal: better collaboration, scientific rigor, and trust in science
+- To advance, we must code a little...
+:::
+
+![Artwork by Allison Horst](images/ahorst-ik-itwasyou.png){.lightbox fig-align="center" width="600"}
+
+
+
