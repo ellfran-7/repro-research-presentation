@@ -1,10 +1,7 @@
 <table style="width: 100%; border: none;">
   <tr>
-    <td style="width: 70%; vertical-align: middle;">
+    <td style="width: 100%; vertical-align: middle;">
       <h1>Reproducible Research: Every little helps</h1>
-    </td>
-    <td style="width: 30%; text-align: right;">
-      <img src="images/logo-lehna.jpg" alt="LEHNA logo" width="120">
     </td>
   </tr>
 </table>
