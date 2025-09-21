@@ -1,31 +1,45 @@
 [
   {
-    "objectID": "02-further-reads.html#some-resources-for-learning-more-about-quarto",
-    "href": "02-further-reads.html#some-resources-for-learning-more-about-quarto",
+    "objectID": "02-further-reads.html#comprehensive-workshop-resource-recommendation",
+    "href": "02-further-reads.html#comprehensive-workshop-resource-recommendation",
     "title": "Further reading",
-    "section": "1 Some resources for learning more about Quarto",
-    "text": "1 Some resources for learning more about Quarto\n\nCasajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL: http://doi.org/10.5281/zenodo.4262978 (link to workshop)\n“Introduction to Quarto” by Andrew Bray at posit::conf(2024) (link)\n“With Quarto Coming, is R Markdwon Going Away? No” blog post by Yihui Xie (link)\n“Introduction to Quarto” by Eric Delmelle (link)"
+    "section": "1 Comprehensive workshop resource recommendation",
+    "text": "1 Comprehensive workshop resource recommendation\nI highly recommend the Reproducible Research in Computational Ecology workshop by Casajus et al. (2024), which provides slides and hands-on exercises covering all concepts discussed in this presentation including research compendium, version control with git, literate programming with Quarto, and reproducible environments with renv.\nHere is the reference and the link:\n\nCasajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL: http://doi.org/10.5281/zenodo.4262978 (workshop materials)"
   },
   {
     "objectID": "02-further-reads.html#some-resources-for-understanding-reproducible-research",
     "href": "02-further-reads.html#some-resources-for-understanding-reproducible-research",
     "title": "Further reading",
     "section": "2 Some resources for understanding Reproducible Research",
-    "text": "2 Some resources for understanding Reproducible Research\n\nCasajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD & Siberchicot A (2024) FRB-CESAB & GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. (http://doi.org/10.5281/zenodo.4262978) (link to workshop)\nRepro4Everyone. (n.d.). Introduction to Reproducibility. Repro4Everyone. (link)\n“Guide for Reproducible Research” by The Turing Way Community. DOI: 10.5281/zenodo.3332807 (link to the guide)\n“A conside guide to reproducible research using secondary data” by Katharina Blankart, Maryna Ivets, Eva Goetjes and Kai Miele (link)"
+    "text": "2 Some resources for understanding Reproducible Research\n\nRepro4Everyone. Introduction to Reproducibility. A beginner-friendly overview of reproducibility concepts and practices. (link)\nThe Turing Way Community. Guide for Reproducible Research. Comprehensive handbook covering all aspects of reproducible research DOI: 10.5281/zenodo.3332807 (link to guide)\nBlankart K, Ivets M, Goetjes E & Miele K. A Concise Guide to Reproducible Research Using Secondary Data. Practical guide focused on working with existing datasets. (link)"
   },
   {
-    "objectID": "02-further-reads.html#literature-on-reproducible-research",
-    "href": "02-further-reads.html#literature-on-reproducible-research",
+    "objectID": "02-further-reads.html#some-resources-for-essential-tools-and-technologies",
+    "href": "02-further-reads.html#some-resources-for-essential-tools-and-technologies",
     "title": "Further reading",
-    "section": "3 Literature on Reproducible Research",
-    "text": "3 Literature on Reproducible Research\n\nClaerbout and Karrenbach (1992)\nLoscalzo (2012)\nFreedman, Cockburn, and Simcoe (2015)\nBaker (2016)\nThis (2017)\nPlesser (2018)\nMarwick, Boettiger, and Mullen (2018)\nPlesser (2018)\nSchloss (2018)\nReproducibility and Replicability in Science (2019)\nDesquilbet et al. (2019)\nGundersen (2021)\nAlston and Rick (2021)\nZiemann, Poulain, and Bora (2023)\nCalnan et al. (2024)\nCasajus et al. (2024)\n“Reproducibility: Why It Matters and How It Can Be Nurtured | Elsevier” (n.d.)\n“Six Factors Affecting Reproducibility in Life Science Research and How to Handle Them” (n.d.)"
+    "section": "3 Some resources for essential tools and technologies",
+    "text": "3 Some resources for essential tools and technologies\n\nVersion control with git and hosting platforms\n\nBryan J. Happy Git and GitHub for the useR. Step-by-step guide for R users to get started with git and GitHub. (link)\n\n\n\nReproducible environments with renv R package\n\nUshey K, Wickham H & Posit. renv: Project Environments for R. Official documentation for managing R package dependencies. (link)\nMaigné E. Package renv: présentation et retour d’expérience (French). Practical experience and presentation on using renv. (link)\n\n\n\nTidy data\n\nWickham H, Çetinkaya-Rundel M & Grolemund G. R for Data Science. Essential resource for learning data manipulation and the tidy data principles. (link)\n\n\n\nLiterate programming and Quarto\n\nKnuth D. Literate Programming (1984). The original paper introducing the concept of literate programming. (link)\nAbrams H. Literate Programming - Introduction. Modern introduction to literate programming concepts. (link)\nBray A. Introduction to Quarto (posit::conf 2024). Comprehensive tutorial for getting started with Quarto. (link)\nXie Y. With Quarto Coming, is R Markdown Going Away? No. Blog post clarifying the relationship between R Markdown and Quarto. (link)\nDelmelle E. Introduction to Quarto. Slide-based introduction to Quarto features and capabilities. (link)"
+  },
+  {
+    "objectID": "02-further-reads.html#finding-repositories-for-your-data",
+    "href": "02-further-reads.html#finding-repositories-for-your-data",
+    "title": "Further reading",
+    "section": "4 Finding repositories for your data:",
+    "text": "4 Finding repositories for your data:\n\nOù déposer et publier ses données - recherche.data.gouv.fr. French government guide for data deposition and publication. (link)\nre3data - Registry of Research Data Repositories. Global registry to help find appropriate data repositories for your field. (link)"
+  },
+  {
+    "objectID": "02-further-reads.html#key-literature-on-reproducible-research",
+    "href": "02-further-reads.html#key-literature-on-reproducible-research",
+    "title": "Further reading",
+    "section": "5 Key literature on Reproducible Research",
+    "text": "5 Key literature on Reproducible Research\nThe bibliography section below contains seminal papers and recent developments in reproducible research practices:\n\nClaerbout and Karrenbach (1992)\nLoscalzo (2012)\nFreedman, Cockburn, and Simcoe (2015)\nBaker (2016)\nThis (2017)\nPlesser (2018)\nMarwick, Boettiger, and Mullen (2018)\nPlesser (2018)\nSchloss (2018)\nReproducibility and Replicability in Science (2019)\nDesquilbet et al. (2019)\nGundersen (2021)\nAlston and Rick (2021)\nZiemann, Poulain, and Bora (2023)\nCalnan et al. (2024)\nCasajus et al. (2024)\n“Reproducibility: Why It Matters and How It Can Be Nurtured | Elsevier” (n.d.)\n“Six Factors Affecting Reproducibility in Life Science Research and How to Handle Them” (n.d.)"
   },
   {
     "objectID": "00-welcome-page.html",
     "href": "00-welcome-page.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome! 🧙\nThis presentation, “Reproducible Research: Every little helps”, offers a brief overview of key ideas and insights I’ve gathered from the literature—along with a few lessons I’ve learned along the way that may aid some of you."
+    "text": "Three little beans painting the same fruit basket, but with divergin results\nWelcome! 🧙\nThis presentation, “Reproducible Research: Every little helps”, offers a brief overview of key ideas and insights I’ve gathered from the literature—along with a few lessons I’ve learned along the way that may aid some of you."
   },
   {
     "objectID": "00-welcome-page.html#background-of-the-presentation",

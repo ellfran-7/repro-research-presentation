@@ -138,9 +138,17 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#some-resources-for-learning-more-about-quarto" id="toc-some-resources-for-learning-more-about-quarto" class="nav-link active" data-scroll-target="#some-resources-for-learning-more-about-quarto"><span class="header-section-number">1</span> Some resources for learning more about Quarto</a></li>
+  <li><a href="#comprehensive-workshop-resource-recommendation" id="toc-comprehensive-workshop-resource-recommendation" class="nav-link active" data-scroll-target="#comprehensive-workshop-resource-recommendation"><span class="header-section-number">1</span> Comprehensive workshop resource recommendation</a></li>
   <li><a href="#some-resources-for-understanding-reproducible-research" id="toc-some-resources-for-understanding-reproducible-research" class="nav-link" data-scroll-target="#some-resources-for-understanding-reproducible-research"><span class="header-section-number">2</span> Some resources for understanding Reproducible Research</a></li>
-  <li><a href="#literature-on-reproducible-research" id="toc-literature-on-reproducible-research" class="nav-link" data-scroll-target="#literature-on-reproducible-research"><span class="header-section-number">3</span> Literature on Reproducible Research</a></li>
+  <li><a href="#some-resources-for-essential-tools-and-technologies" id="toc-some-resources-for-essential-tools-and-technologies" class="nav-link" data-scroll-target="#some-resources-for-essential-tools-and-technologies"><span class="header-section-number">3</span> Some resources for essential tools and technologies</a>
+  <ul class="collapse">
+  <li><a href="#version-control-with-git-and-hosting-platforms" id="toc-version-control-with-git-and-hosting-platforms" class="nav-link" data-scroll-target="#version-control-with-git-and-hosting-platforms">Version control with <code>git</code> and hosting platforms</a></li>
+  <li><a href="#reproducible-environments-with-renv-r-package" id="toc-reproducible-environments-with-renv-r-package" class="nav-link" data-scroll-target="#reproducible-environments-with-renv-r-package">Reproducible environments with <code>renv</code> R package</a></li>
+  <li><a href="#tidy-data" id="toc-tidy-data" class="nav-link" data-scroll-target="#tidy-data">Tidy data</a></li>
+  <li><a href="#literate-programming-and-quarto" id="toc-literate-programming-and-quarto" class="nav-link" data-scroll-target="#literate-programming-and-quarto">Literate programming and <code>Quarto</code></a></li>
+  </ul></li>
+  <li><a href="#finding-repositories-for-your-data" id="toc-finding-repositories-for-your-data" class="nav-link" data-scroll-target="#finding-repositories-for-your-data"><span class="header-section-number">4</span> Finding repositories for your data:</a></li>
+  <li><a href="#key-literature-on-reproducible-research" id="toc-key-literature-on-reproducible-research" class="nav-link" data-scroll-target="#key-literature-on-reproducible-research"><span class="header-section-number">5</span> Key literature on Reproducible Research</a></li>
   </ul>
 </nav>
     </div>
@@ -179,28 +187,68 @@ div.csl-indent {
 
 
 <p><br></p>
-<section id="some-resources-for-learning-more-about-quarto" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="some-resources-for-learning-more-about-quarto"><span class="header-section-number">1</span> Some resources for learning more about Quarto</h2>
+<section id="comprehensive-workshop-resource-recommendation" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="comprehensive-workshop-resource-recommendation"><span class="header-section-number">1</span> Comprehensive workshop resource recommendation</h2>
+<p>I highly recommend the <strong>Reproducible Research in Computational Ecology</strong> workshop by Casajus et al.&nbsp;(2024), which provides slides and hands-on exercises covering all concepts discussed in this presentation including research compendium, version control with <code>git</code>, literate programming with <code>Quarto</code>, and reproducible environments with <code>renv.</code></p>
+<p>Here is the reference and the link:</p>
 <ul>
-<li><p>Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD &amp; Siberchicot A (2024) FRB-CESAB &amp; GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL:&nbsp;<a href="http://doi.org/10.5281/zenodo.4262978" class="uri">http://doi.org/10.5281/zenodo.4262978</a> (<a href="https://rdatatoolbox.github.io/chapters/ex-compendium.html">link to workshop</a>)</p></li>
-<li><p>“<em>Introduction to Quarto</em>” by Andrew Bray at posit::conf(2024) (<a href="https://posit-conf-2024.github.io/quarto-intro/">link</a>)</p></li>
-<li><p>“<em>With Quarto Coming, is R Markdwon Going Away? No</em>” blog post by Yihui Xie (<a href="https://yihui.org/en/2022/04/quarto-r-markdown/">link</a>)</p></li>
-<li><p>“<em>Introduction to Quarto</em>” by Eric Delmelle (<a href="https://ericdelmelle.github.io/introToQuarto/#/title-slide">link</a>)</p></li>
+<li>Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD &amp; Siberchicot A (2024) FRB-CESAB &amp; GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. URL:&nbsp;<a href="http://doi.org/10.5281/zenodo.4262978" class="uri">http://doi.org/10.5281/zenodo.4262978</a> (<a href="https://rdatatoolbox.github.io/">workshop materials</a>)</li>
 </ul>
 <p><br></p>
 </section>
 <section id="some-resources-for-understanding-reproducible-research" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="some-resources-for-understanding-reproducible-research"><span class="header-section-number">2</span> Some resources for understanding Reproducible Research</h2>
 <ul>
-<li><p>Casajus N, Bonnici I, Dray S, Gimenez O, Guéry L, Guilhaumon F, Schiettekatte NMD &amp; Siberchicot A (2024) FRB-CESAB &amp; GdR EcoStat training course: Reproducible Research in Computational Ecology. Zenodo. (<a href="http://doi.org/10.5281/zenodo.4262978" class="uri">http://doi.org/10.5281/zenodo.4262978</a>) (<a href="https://rdatatoolbox.github.io/chapters/ex-compendium.html">link to workshop</a>)</p></li>
-<li><p>Repro4Everyone. (n.d.). <em>Introduction to Reproducibility</em>. Repro4Everyone. (<a href="https://www.repro4everyone.org/resources/intro-reproducibility">link</a>)</p></li>
-<li><p>“<em>Guide for Reproducible Research</em>” by The Turing Way Community. DOI:&nbsp;<a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a> (<a href="https://book.the-turing-way.org/reproducible-research/reproducible-research.html">link to the guide</a>)</p></li>
-<li><p>“<em>A conside guide to reproducible research using secondary data</em>” by Katharina Blankart, Maryna Ivets, Eva Goetjes and Kai Miele (<a href="https://katblankart.github.io/DataLiteracy/intro.html">link</a>)</p></li>
+<li><p>Repro4Everyone. <strong><em>Introduction to Reproducibility</em></strong>. A beginner-friendly overview of reproducibility concepts and practices. (<a href="https://www.repro4everyone.org/resources/intro-reproducibility">link</a>)</p></li>
+<li><p>The Turing Way Community. <strong><em>Guide for Reproducible Research</em></strong>. Comprehensive handbook covering all aspects of reproducible research DOI:&nbsp;<a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a> (<a href="https://book.the-turing-way.org/reproducible-research/reproducible-research.html">link to guide</a>)</p></li>
+<li><p>Blankart K, Ivets M, Goetjes E &amp; Miele K. <strong><em>A Concise Guide to Reproducible Research Using Secondary Data</em></strong>. Practical guide focused on working with existing datasets. (<a href="https://katblankart.github.io/DataLiteracy/intro.html">link</a>)</p></li>
 </ul>
 <p><br></p>
 </section>
-<section id="literature-on-reproducible-research" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="literature-on-reproducible-research"><span class="header-section-number">3</span> Literature on Reproducible Research</h2>
+<section id="some-resources-for-essential-tools-and-technologies" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="some-resources-for-essential-tools-and-technologies"><span class="header-section-number">3</span> Some resources for essential tools and technologies</h2>
+<section id="version-control-with-git-and-hosting-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="version-control-with-git-and-hosting-platforms">Version control with <code>git</code> and hosting platforms</h3>
+<ul>
+<li>Bryan J. <strong><em>Happy Git and GitHub for the useR</em></strong>. Step-by-step guide for R users to get started with <code>git</code> and <code>GitHub.</code> (<a href="https://happygitwithr.com/">link</a>)</li>
+</ul>
+</section>
+<section id="reproducible-environments-with-renv-r-package" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-environments-with-renv-r-package">Reproducible environments with <code>renv</code> R package</h3>
+<ul>
+<li><p>Ushey K, Wickham H &amp; Posit. <strong><em>renv: Project Environments for R</em></strong>. Official documentation for managing R package dependencies. (<a href="https://rstudio.github.io/renv/articles/renv.html">link</a>)</p></li>
+<li><p>Maigné E. <strong><em>Package renv: présentation et retour d’expérience</em></strong> (French). Practical experience and presentation on using renv. (<a href="https://elisemaigne.pages-forge.inrae.fr/2021_package_renv/presentation.html#1">link</a>)</p></li>
+</ul>
+</section>
+<section id="tidy-data" class="level3">
+<h3 class="anchored" data-anchor-id="tidy-data">Tidy data</h3>
+<ul>
+<li>Wickham H, Çetinkaya-Rundel M &amp; Grolemund G. <strong><em>R for Data Science</em></strong>. Essential resource for learning data manipulation and the tidy data principles. (<a href="https://r4ds.hadley.nz/data-tidy.html">link</a>)</li>
+</ul>
+</section>
+<section id="literate-programming-and-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="literate-programming-and-quarto">Literate programming and <code>Quarto</code></h3>
+<ul>
+<li><p>Knuth D. <strong><em>Literate Programming</em></strong> (1984). The original paper introducing the concept of literate programming. (<a href="https://academic.oup.com/comjnl/article/27/2/97/343244">link</a>)</p></li>
+<li><p>Abrams H. <strong><em>Literate Programming - Introduction</em></strong>. Modern introduction to literate programming concepts. (<a href="https://howardism.org/Technical/LP/introduction.html">link</a>)</p></li>
+<li><p>Bray A. <strong><em>Introduction to Quarto (posit::conf 2024)</em></strong>. Comprehensive tutorial for getting started with Quarto. (<a href="https://posit-conf-2024.github.io/quarto-intro/">link</a>)</p></li>
+<li><p>Xie Y. <strong><em>With Quarto Coming, is R Markdown Going Away? No</em></strong>. Blog post clarifying the relationship between R Markdown and Quarto. (<a href="https://yihui.org/en/2022/04/quarto-r-markdown/">link</a>)</p></li>
+<li><p>Delmelle E. <strong><em>Introduction to Quarto</em></strong>. Slide-based introduction to Quarto features and capabilities. (<a href="https://ericdelmelle.github.io/introToQuarto/#/title-slide">link</a>)</p></li>
+</ul>
+<p><br></p>
+</section>
+</section>
+<section id="finding-repositories-for-your-data" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="finding-repositories-for-your-data"><span class="header-section-number">4</span> Finding repositories for your data:</h2>
+<ul>
+<li><p><strong><em>Où déposer et publier ses données</em></strong> - recherche.data.gouv.fr. French government guide for data deposition and publication. (<a href="https://recherche.data.gouv.fr/fr/guide/ou-deposer-et-publier-ses-donnees">link</a>)</p></li>
+<li><p><strong><em>re3data</em></strong> - Registry of Research Data Repositories. Global registry to help find appropriate data repositories for your field. (<a href="https://www.re3data.org/">link</a>)</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="key-literature-on-reproducible-research" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="key-literature-on-reproducible-research"><span class="header-section-number">5</span> Key literature on Reproducible Research</h2>
+<p>The bibliography section below contains seminal papers and recent developments in reproducible research practices:</p>
 <ul>
 <li><span class="citation" data-cites="claerbout1992">Claerbout and Karrenbach (<a href="#ref-claerbout1992" role="doc-biblioref">1992</a>)</span></li>
 <li><span class="citation" data-cites="loscalzo2012">Loscalzo (<a href="#ref-loscalzo2012" role="doc-biblioref">2012</a>)</span></li>
