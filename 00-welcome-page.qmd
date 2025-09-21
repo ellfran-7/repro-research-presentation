@@ -7,11 +7,12 @@ from: markdown+emoji
 format: html
 ---
 
+![Three little beans painting the same fruit basket, but with divergin results](images/efranklin-repro-illu.png){height="200" style="text-align:center;"}
+
 
 Welcome! :mage: 
 
 This presentation, “**Reproducible Research: Every little helps**”, offers a brief overview of key ideas and insights I’ve gathered from the literature—along with a few lessons I’ve learned along the way that may aid some of you.
-
 
 ## Background of the presentation
 
