@@ -915,37 +915,6 @@ Research becomes inaccessible and irreproducible when results are manually creat
 ::::::::
 
 
-
-## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
-
-### Finalising results and sharing {auto-animate="true"}
-
-<hr class="nice-green-obj" style="border: 2px solid; margin: 20px 0;">
-
-::: {style="margin-top: 1em;"}
-[**Issues**]{.nice-pink}:
-Research becomes inaccessible and irreproducible when results are manually created, data is poorly archived, and materials are trapped behind paywalls or on unstable platforms
-:::
-
-
-:::::::: {style="margin-top: 1em;"}
-:::::: columns
-:::: {.column width="50%"}
-[**Solutions**]{.nice-green}:
-
--   Produce figures + tables with code<br />(not by :wave:)
--   Share openly (preprints, open access)
-::::
-
-:::: {.column width="50%"}
-
-![](images/logos-preprints-pubs.png){fig-align="center"}
-
-::::
-::::::
-::::::::
-
-
 ## After data analysis ![](images/thread-after-analysis.png){style="height: 1em; vertical-align: middle; margin-left: 645px;"} {auto-animate="true"}
 
 ### Finalising results and sharing {auto-animate="true"}
